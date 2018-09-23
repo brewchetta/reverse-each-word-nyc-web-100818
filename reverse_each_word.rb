@@ -1,8 +1,3 @@
-require 'pry'
-
 def reverse_each_word(string)
-  string.split(" ").map{|x| x.reverse}.join(" ")
+  string.split(" ").collect{|x| x.reverse}.join(" ")
 end
-
-binding.pry 
-
